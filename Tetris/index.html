@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>TETRIS</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="images/logo.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+<body scroll="no" style = "overflow:hidden">
+
+    <div class="hidden_stuff">
+        <div class="hidden_images">
+            <img hidden src="images/red_square.png" alt="Red square" id="red_square">
+            <img hidden src="images/green_square.png" alt="Green square" id="green_square">
+            <img hidden src="images/blue_square.png" alt="Blue square" id="blue_square">
+            <img hidden src="images/orange_square.png" alt="Orange square" id="orange_square">
+            <img hidden src="images/pink_square.png" alt="Pink square" id="pink_square">
+            <img hidden src="images/cyan_square.png" alt="Cyan square" id="cyan_square">
+            <img hidden src="images/yellow_square.png" alt="Yellow square" id="yellow_square">
+
+            <img hidden src="images/gred_square.png" alt="Ghost red square" id="gred_square">
+            <img hidden src="images/ggreen_square.png" alt="Ghost green square" id="ggreen_square">
+            <img hidden src="images/gblue_square.png" alt="Ghost blue square" id="gblue_square">
+            <img hidden src="images/gorange_square.png" alt="Ghost orange square" id="gorange_square">
+            <img hidden src="images/gpink_square.png" alt="Ghost pink square" id="gpink_square">
+            <img hidden src="images/gcyan_square.png" alt="Ghost cyan square" id="gcyan_square">
+            <img hidden src="images/gyellow_square.png" alt="Ghost yellow square" id="gyellow_square">
+        </div>
+    </div>
+
+    <div class="main">
+        <template id="player-template">
+            <div class="player">
+                <div class="score"></div>
+                <canvas class="tetris" width="400" height="400"></canvas>
+                <div class="playerId"></div>
+            </div>
+        </template>
+    </div>
+
+    <div>
+        <h3 class="menu_text" id="menu_text">(Tetris_game)</h3>
+
+    </div>
+
+    <div>
+        <button class="Exit_button" type="button" id="Exit_button">Exit</button>
+        <button class="soundplus_button" onclick="plusfunction()" type="button" id="soundplus_button">+</button>
+        <button class="soundneg_button" onclick="negfunction()" type="button" id="soundneg_button">-</button>
+        <button class="rest_soundneg_button" onclick="rest_audiopneg()" id="rest_soundneg_button">--</button>
+        <button class="rest_soundplus_button" onclick="rest_audioplus()" id="rest_soundplus_button">++</button>
+    </div>
+    
+    <div class="chat">
+        <div class="chat-window" id="chatt-window"></div>
+        <p id="chat2" class="chat2">Chat:</p>
+        <input type="text" class="message" id="message" placeholder="Message">
+        <button class="btn" id="btn">Send</button> 
+    </div>
+
+<!--Detta e typ ett test-->
+<div class="square" id="window-bg"></div>
+
+    <div id="output" class="output"></div>
+    <p class="game_over" id="game_over">Game Over <br></p>
+    <div class="rectangle" id="pause"></div>
+
+    <div class="scripts">
+        <script src="client/connection-manager.js"></script>
+        <script src="client/tetris-manager.js"></script>
+    
+        <script src="client/arena.js"></script>
+        <script src="client/events.js"></script>
+        <script src="client/player.js"></script>
+        <script src="client/chat.js"></script>
+        <script src="client/tetris.js"></script>
+        <script src="client/main.js"></script>
+    </div>
+
+</body>
+</html>

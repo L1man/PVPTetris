@@ -1,0 +1,185 @@
+
+
+body {
+    background: rgb(0, 0, 0);
+    display: flex;
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+    z-index: 1;
+}
+
+canvas {
+    border: 1px solid
+}
+
+
+.menu {
+    float: left;
+    z-index: 1;
+}
+
+.btn1 {
+    background-color: white;
+    font-size: 20px;
+    margin: 10px;
+    margin-top: 50px;
+    width: 100%;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.player {
+    float: right;
+    margin: 20px;
+    z-index: 1;
+}
+
+.game_over {
+    position: absolute;
+    color: lightslategrey;
+    -webkit-text-stroke-width: 10px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.199);
+    font-weight: 900;
+    visibility: hidden;
+    z-index: 4;
+    left: 60px;
+    top: 200px;
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Exit_button {
+    position: absolute;
+    visibility: hidden;
+    z-index: 5;
+    left: 300px;
+    top: 550px;
+    color: rgb(3, 3, 7);
+    background: rgb(151, 117, 117);
+    border-style: solid;
+    border: 100px rgb(233, 229, 229); 
+    height: 50px;
+    width: 200px
+}
+.soundplus_button{
+    position: absolute;
+    visibility: hidden;
+    z-index: 5;
+    left: 400px;
+    top: 200px;
+    color: blue;
+    background: red;
+    border-style: solid;
+    border: 5px solid rgb(112, 94, 94); 
+    height: 50px;
+    width: 200px
+}
+
+.soundneg_button{
+    position: absolute;
+    visibility: hidden;
+    z-index: 5;
+    left: 200px;
+    top: 200px;
+    color: blue;
+    background: rgb(133, 81, 81);
+    border-style: solid;
+    border: solid 5px rgb(233, 229, 229); /*varför funkar inte detta? */
+    height: 50px;
+    width: 200px
+}
+
+.rectangle{
+    position: absolute;
+    left: 200px;
+    width: 400px;
+    background-color: #555;
+    height: 650px;
+    z-index: 4;
+}
+
+
+.rest_soundneg_button {
+    position: absolute;
+    visibility: hidden;
+    z-index: 5;
+    left: 400px;
+    top: 350px;
+    color: blue;
+    background: rgb(133, 81, 81);
+    border-style: solid;
+    border: solid 5px rgb(233, 229, 229); /*varför funkar inte detta? */
+    height: 50px;
+    width: 200px
+}
+
+.rest_soundplus_button {
+    position: absolute;
+    visibility: hidden;
+    z-index: 5;
+    left: 200px;
+    top: 350px;
+    color: blue;
+    background: rgb(133, 81, 81);
+    border-style: solid;
+    border: solid 5px rgb(233, 229, 229); /*varför funkar inte detta? */
+    height: 50px;
+    width: 200px
+}
+
+.menu_text{
+    visibility: hidden;
+    position: absolute;
+    z-index: 5;
+    left: 295px;
+}
+
+/* chat delen här */
+
+
+.btn {
+    right: 50px;
+}
+
+.output {
+    position: relative;
+    left: 800px;
+    top: 470px;
+    width: 150px;
+    font-size: 15px;
+    z-index: 4;
+    height: 184px;
+    overflow: auto;
+}
+
+.chat2{
+    position: relative;
+    left: 800px;
+    top: 450px;
+    z-index: 3;
+}
+
+.square {
+    position: absolute;
+    border:2px solid white;
+    margin-top: 30px;
+    height:180px;
+    width: 500px;
+    z-index: 1;
+    left: 800px;
+    top: 450px;
+    background-color: black;
+}
+.message {
+    position: relative;
+    left: 800px;
+    top: 410px;
+    z-index: 3;
+}
+.btn {
+    position: relative;
+    left: 800px;
+    top: 410px;
+    z-index: 3;
+}
